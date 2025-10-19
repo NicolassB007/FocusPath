@@ -1,0 +1,169 @@
+/* IMPORTANDO FONTES */
+@font-face {
+    font-family: Inter;
+    src: url('../fonts/Inter-VariableFont.ttf');
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: DancingScript;
+    src: url('../fonts/DancingScript-VariableFont_wght.ttf');
+}
+
+
+/* FORMATAÇÃO GERAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* overflow-y: hidden; */
+    list-style-type: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* VIDEO */
+body {
+    background-image: linear-gradient(210deg, #00667b53, #009CBA, #00C5EA, #46D9FF, #DDF5FF);
+}
+
+/* HEADER */
+
+header {
+
+    & nav {
+        align-items: center;
+        display: flex; 
+
+        & img {
+            width: 100px;
+            object-fit: cover;
+        }
+
+        & ul {
+            display: flex;
+            margin: 0 auto;
+            height: 40px;
+            list-style-type: none;
+            
+            & li a {
+                color: #46D9FF;
+                display: inline-block;
+                font-family: Inter;
+                font-size: 1.3rem;
+                padding: 0 20px;
+                text-decoration: none;
+            }
+
+            & li a:hover {
+                color: #DDF5FF;
+                font-size: 1.5rem;
+                transition: all .3s ease;
+            }
+        }
+    }
+}
+
+/* MAIN */
+main {
+
+    & #introduction-text {
+        text-align: center;
+    }
+
+     & #introduction-text h1 {
+        color: #DDF5FF;
+        font-family: Poppins;
+        font-size: 2.8rem;
+        margin: 0;
+        padding: 8px 0;
+    }
+
+    & #introduction-text p {
+        color: #DDF5FF;
+        font-family: Inter;
+        font-size: 1.1rem;
+    }
+
+    & #formTasks {
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        margin: 0 auto;
+
+        & label {
+            color: #001319;
+            font-family: Inter;
+            font-size: 1.2rem;
+        }
+
+        & input {
+            border: 2px solid #009CBA;
+            border-radius: 5px;
+            font-family: Inter;
+            padding: 5px;
+        }
+
+        & #metaName {
+            margin-bottom: 18px;
+        }
+
+        & button {
+            background-image: linear-gradient(90deg, #DDF5FF, #46D9FF);
+            border: none;
+            border-radius: 8px;
+            color: #009CBA;
+            cursor: pointer;
+            font-family: Poppins;
+            padding: 5px;
+        }
+
+        & ::placeholder {
+            font-family: Inter;
+            font-size: .8rem;
+            padding: 5px;
+        }
+
+        & #msgError {
+            color: red;
+            font-family: Poppins;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 8px;
+        }
+    }
+
+    & table {
+        border: 2px solid #001319;
+        border-radius: 10px;
+        color: #001319;
+        margin: 20px auto;
+        font-family: Inter;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 1000px;
+    }
+
+    .button {
+        background-color: none;
+        border: 1px solid #DDF5FF;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 5px;
+        font-family: Inter;
+        font-size: 1.1rem;
+    }
+
+    & .button:hover {
+        background-color: red;
+        color: #DDF5FF;
+        font-size: 1.2rem;
+        transition: all .5s ease;
+    }
+}

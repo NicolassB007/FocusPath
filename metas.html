@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FocusPath</title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/metas.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="imgs/logo.png" alt="">
+        
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="metas.html">Metas</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- FIM - CABEÇALHO -->
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main>
+            <div id="introduction-text">
+                <h1>
+                    Minhas Metas
+                </h1>
+                <p>
+                    Acompanhe suas metas aqui!
+                </p>
+            </div>
+
+            <form id="formTasks">
+                <label>Meta:</label>
+                <input type="text" id="metaName" placeholder="Digite sua meta">
+
+                <label>Descrição da tarefa:</label>
+                <input type="text" id="taskDescription" placeholder="Breve descrição da sua meta">
+
+                <div id="msgError"></div>
+
+                <button type="submit" id="submitButton">Salvar Tarefa</button>
+            </form>
+
+            <!-- LOCAL ONDE AS METAS SERÃO MOSTRADAS -->
+            <table>
+                <thead>
+                    <th id="idMeta">ID</th>
+                    <th id="thName">Nome</th>
+                    <th id="thDescription">Descrição</th>
+                    <th id="thActions">Ações</th>
+                </thead>
+                <tbody id="tableMestas">
+                </tbody>
+            </table>
+        </main>
+        <!-- FIM - CONTEÚDO PRINCIPAL -->
+
+        <script src="js/scriptMetas.js"></script>
+    </body>
+</html>
